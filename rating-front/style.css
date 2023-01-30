@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", san-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3em;
+  border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.container .info {
+  width: 100px;
+  height: auto;
+  text-align: center;
+  margin: 1em 0 0.5em;
+}
+.container .emoji {
+  font-size: 2rem;
+  padding: 0.5em 0;
+}
+.container .rating {
+  margin-bottom: 2em;
+}
+.container .rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.container .rating .star {
+  padding: 0 0.5em;
+  cursor: pointer;
+}
+.container .rating .star:hover path {
+  fill: #ffe766;
+}
+.container .rating .star:hover ~ .star path {
+  fill: #ffe766;
+}
+.container .rating .star path {
+  fill: #777;
+  width: 100%;
+  height: 100%;
+  stroke: none;
+}
+.container .rating .selected ~ .star path,
+.container .rating .selected path {
+  fill: #ffd700;
+}
+.slider {
+  width: 30vw;
+  margin-top: 30px;
+}
+.slider img {
+  width: 100%;
+}
+.slick-prev:before, .slick-next:before {
+  color: black;
+}
+.feedback-question {
+  color: blue;
+  cursor: pointer;
+}
+.feedback-input {
+  display: none;
+}
+.feedback-textarea {
+  width: 30vw;
+}
+.save {
+  margin-top: 30px;
+}
+.save-btn {
+  padding: 10px;
+  width: 10vw;
+  cursor: pointer;
+}

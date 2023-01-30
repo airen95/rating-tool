@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+        "simple": {
+            "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        }
+    },
+    "handlers": {
+        "rating_file": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "level": "INFO",
+            "formatter": "simple",
+            "filename": "../logs/rating_file.txt",
+            "maxBytes": 51200000,
+            "backupCount": 10,
+            "encoding": "utf-8"
+        },
+        "error_file": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "level": "INFO",
+            "formatter": "simple",
+            "filename": "../logs/error_log.txt",
+            "maxBytes": 51200000,
+            "backupCount": 10,
+            "encoding": "utf-8"
+        }
+    },
+    "loggers": {
+        "reshare_logger": {
+            "level": "DEBUG",
+            "handlers": [
+                "rating_file"
+            ]
+        },
+        "error_logger": {
+            "level": "ERROR",
+            "handlers": [
+                "error_file"
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+#database:
+auth_path: './resources/db_le.json'
+source_db: 'galerie_source'
+rating_db: 'rating'
+
+#general:
+usernames: './resources/usernames.txt'
+
+#env:
+host: 

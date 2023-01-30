@@ -1,0 +1,7 @@
+{
+    "host":"dpg-cf41v79gp3js2ohhp6tg-a.singapore-postgres.render.com",
+    "dbname": "rating_tool",
+    "username": "dieule",
+    "password" :"fVgS694FwsPfbVk3SAG8YDZHYDz1unfL",
+    "port" : 5432
+}
