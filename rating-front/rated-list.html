@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Your Rated List | Rating Tool</title>
+  <link rel="stylesheet" href="./3rd-party/jquery-star-rating/star-rating-svg.css">
+  <link rel="stylesheet" href="./3rd-party/jquery-modal/jquery-modal.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./check-authen.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="left-nav">
+      <a href="/index.html">
+        Rating Tool
+      </a>
+      <a href="/rated-list.html">
+        Your Rated List
+      </a>
+    </div>
+    <div id="user-info">
+      <div id="email"></div>
+      <div id="sign-out">Sign out</div>
+    </div>
+  </nav>
+  <div class="masonry-container">
+    <h2>Your Rated List</h2>
+    <div style="display: none" class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    <section id="masonry" class="masonry">
+    </section>
+  </div>
+  <form id="feedback-form" class="modal">
+    Your feedback:
+    <textarea rows="10" id="my-prompt"></textarea>
+    <div class="save-my-prompt">
+      <button class="save-btn">SAVE</button>
+    </div>
+  </form>
+  <script src="./3rd-party/jquery.min.js"></script>
+  <script src="./3rd-party/axios/axios.min.js"></script>
+  <script src="./3rd-party/jquery-star-rating/jquery.star-rating-svg.min.js"></script>
+  <script src="./3rd-party/jquery-modal/jquery-modal.min.js"></script>
+  <script type="module" src="./rated-list.js"></script>
+</body>
+</html>
